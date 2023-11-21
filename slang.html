@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Letter Matching Images</title>
+	<style>
+		/* Set the font family and size for the entire page */
+body {
+  background-image: url("bg.jpg");
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+    font-size: 16px;
+    background-attachment: fixed;
+  /* padding: 50px; */
+  /* width: 100%; */
+}
+
+nav{
+	/* background-color: rgb(191, 244, 244); */
+	height: 100px;
+	/* width: 100%; */
+	align-items: center;
+	padding: 20px;
+	
+}
+/* Style the input field */
+#input-text {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the button */
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fdfefd;
+  color: rgb(0, 0, 0);
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+}
+button:hover{
+  background-color: #4CAF50;
+  color: white;
+
+}
+
+
+/* Add some margin to the top of the image container */
+#image-container {
+  margin-top: 100px;
+}
+
+
+/* Center the text inside the image container */
+#image-container p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Style the images themselves */
+#image-container img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  /* object-fit: cover; */
+  /* border: 2px solid #ccc; */
+  border-radius: 4px;
+  margin-top: 10px;
+
+  }
+  .hed {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Brush Script MT;
+	/* padding: auto; */
+}
+img{
+	height: 120px;
+	width: 100px;
+	padding: 25px;
+}
+
+	</style>
+</head>
+<body>
+	<center>
+		<nav>
+		<h1 class="hed">Try out the ASL!</h1>
+	</nav>
+	<br>
+	<input type="text" id="input-text" placeholder="Type something">
+	<button onclick="matchLetters()">Match Letters</button>
+	<br>
+	<img src="on.png" onclick="startListening()"></img>
+	<img src="off.png" class="off" onclick="stopListening()"></img>
+	<br>
+	<div id="image-container"></div>
+	<script src="slang.js"></script>
+</center>
+</body>
+</html>
+
+
+
+
